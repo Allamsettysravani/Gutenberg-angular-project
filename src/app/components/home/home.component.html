@@ -1,0 +1,70 @@
+<div class="home-container">
+  <div class="status-bar">
+    <div>9:41</div>
+    <div class="status-icons">
+      <span>📶</span>
+      <span>🔋</span>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <h1 class="title">Gutenberg Project</h1>
+    <p class="subtitle">A social cataloging website that allows you to freely search its database of books, annotations, and reviews.</p>
+    
+    <div class="genres-grid">
+      <div class="genres-column">
+        <button class="genre-button" (click)="navigateToGenre('fiction')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/Fiction.svg" alt="Fiction Icon" />
+            <span class="genre-name">FICTION</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+        <button class="genre-button" (click)="navigateToGenre('drama')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/Drama.svg" alt="Drama Icon" />
+            <span class="genre-name">DRAMA</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+        <button class="genre-button" (click)="navigateToGenre('humour')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/Humour.svg" alt="Humour Icon" />
+            <span class="genre-name">HUMOR</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+        <button class="genre-button" (click)="navigateToGenre('politics')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/Politics.svg" alt="Politics Icon" />
+            <span class="genre-name">POLITICS</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+      </div>
+      <div class="genres-column">
+        <button class="genre-button" (click)="navigateToGenre('philosophy')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/Philosophy.svg" alt="Philosophy Icon" />
+            <span class="genre-name">PHILOSOPHY</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+        <button class="genre-button" (click)="navigateToGenre('history')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/History.svg" alt="History Icon" />
+            <span class="genre-name">HISTORY</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+        <button class="genre-button" (click)="navigateToGenre('adventure')">
+          <div class="genre-content">
+            <img class="genre-icon" src="../../../assets/Adventure.svg" alt="Adventure Icon" />
+            <span class="genre-name">ADVENTURE</span>
+          </div>
+          <span class="arrow-icon"><img class="next-icon" src="../../../assets/Next.svg" alt="Next Icon" /></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

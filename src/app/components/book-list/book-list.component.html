@@ -1,0 +1,34 @@
+<div class="book-list-container">
+  <div class="header">
+    <a routerLink="/" class="back-link"><span class="arrow-icon"><img class="next-icon" src="../../../assets/Back.svg" alt="Next Icon" /></span> {{getCategoryName()}}</a>
+    <div class="search-box">
+      <input 
+        type="text" 
+        [value]="searchTerm"
+        (input)="onSearch($event)"
+        placeholder="Search"
+        class="search-input"
+      >
+      <span class="search-icon"><img class="next-icon" src="../../../assets/Search.svg" alt="Search Icon" /></span>
+      <button *ngIf="searchTerm" class="clear-button" (click)="onSearch({target: {value: ''}})">×</button>
+    </div>
+  </div>
+
+  <div class="books-section">
+    <div class="books-grid">
+      <div *ngFor="let book of books" class="book-card" (click)="openBook(book)">
+        <div class="book-cover">
+          <img [src]="book.formats['image/jpeg']" [alt]="book.title">
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">{{book.title}}</h3>
+          <p class="book-author">{{getAuthorName(book)}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    Loading more books...
+  </div>
+</div>

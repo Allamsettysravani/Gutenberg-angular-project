@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="topography" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+            <path fill="none" stroke="#5E56E7" stroke-width="0.8" opacity="0.07" d="
+                M0,40 C20,35 40,45 60,40 S100,35 120,40 S160,45 180,40
+                M-20,80 C0,75 20,85 40,80 S80,75 100,80 S140,85 160,80
+                M10,120 C30,115 50,125 70,120 S110,115 130,120 S170,125 190,120
+                M-10,160 C10,155 30,165 50,160 S90,155 110,160 S150,165 170,160
+            "/>
+            <path fill="none" stroke="#5E56E7" stroke-width="0.8" opacity="0.07" d="
+                M40,20 C60,15 80,25 100,20 S140,15 160,20 S200,25 220,20
+                M20,60 C40,55 60,65 80,60 S120,55 140,60 S180,65 200,60
+                M30,100 C50,95 70,105 90,100 S130,95 150,100 S190,105 210,100
+                M0,140 C20,135 40,145 60,140 S100,135 120,140 S160,145 180,140
+            "/>
+            <path fill="none" stroke="#5E56E7" stroke-width="0.8" opacity="0.07" d="
+                M-10,30 C10,25 30,35 50,30 S90,25 110,30 S150,35 170,30
+                M15,70 C35,65 55,75 75,70 S115,65 135,70 S175,75 195,70
+                M-5,110 C15,105 35,115 55,110 S95,105 115,110 S155,115 175,110
+                M20,150 C40,145 60,155 80,150 S120,145 140,150 S180,155 200,150
+            "/>
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F7FF"/>
+    <rect width="100%" height="100%" fill="url(#topography)"/>
+</svg> 

@@ -1,0 +1,169 @@
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  background: url('/assets/topography.svg') center/800px repeat;
+  background-color: #F8F7FF;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    background-size: 600px auto;
+  }
+}
+
+.content-wrapper {
+  max-width: 900px;
+  width: 100%;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.title {
+  font-size: 48px;
+  color: #5E56E7;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-left: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    padding-left: 0px;
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  line-height: 1.5;
+  padding-left: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    padding-left: 0px;
+  }
+}
+
+.genres-grid {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.genres-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.genre-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.50rem 1rem;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(211, 209, 238, 0.5);
+  width: 100%;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(211, 209, 238, 0.8);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem 1.25rem;
+  }
+}
+
+.genre-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.genre-icon {
+  font-size: 24px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5E56E7;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+.next-icon{
+  width: 18px;
+  height: 18px;
+}
+
+.genre-name {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.arrow-icon {
+  color: #5E56E7;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+// Mobile status bar
+.status-bar {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 1rem;
+    font-size: 14px;
+    color: #000;
+
+    .status-icons {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
